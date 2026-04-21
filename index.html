@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Propuesta Kurios Colombia · 2026 — B Management SAS</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--blue:#0025DB;--blue-lt:#E8ECFF;--green:#00CC66;--green-lt:#E6FFF2;--navy:#1F1F3E;--navy2:#2a2a50;--navy3:#161630;--silver:#8890B5;--black:#333;--off:#F4F5F7;--grey:#E2E2E0;--mid:#888;--glass:rgba(255,255,255,.06);--glass-b:rgba(255,255,255,.12);--amber:#F59E0B}
+html{scroll-behavior:smooth}body{background:var(--off);color:var(--black);font-family:'Open Sans',sans-serif;min-height:100vh}
+nav{position:sticky;top:0;z-index:100;background:linear-gradient(135deg,var(--navy3),var(--navy),var(--navy2));display:flex;align-items:center;justify-content:space-between;padding:0 32px;height:54px;border-bottom:1px solid rgba(255,255,255,.08)}
+.nav-brand{font-family:'Poppins',sans-serif;font-size:10px;letter-spacing:.25em;text-transform:uppercase;color:rgba(255,255,255,.45);font-weight:600}
+.nav-logo{height:26px;width:auto;display:block;opacity:.95}
+@media(max-width:750px){.nav-logo{height:20px}}
+.nav-right{display:flex;align-items:center}.nav-tabs{display:flex}
+.nav-tab{padding:0 18px;height:54px;display:flex;align-items:center;font-family:'Poppins',sans-serif;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:rgba(255,255,255,.4);cursor:pointer;border:none;border-bottom:2px solid transparent;transition:all .2s;font-weight:500;background:none}
+.nav-tab:hover{color:rgba(255,255,255,.75)}.nav-tab.active{color:#fff;border-bottom-color:var(--green)}
+.toggles{display:flex;align-items:center;gap:6px;margin-left:16px;border-left:1px solid rgba(255,255,255,.12);padding-left:16px}
+.tg{display:flex;gap:2px;background:rgba(255,255,255,.06);border-radius:4px;padding:2px}
+.tb{font-family:'Poppins',sans-serif;font-size:10px;font-weight:600;padding:3px 8px;border:none;border-radius:3px;cursor:pointer;transition:all .15s;background:transparent;color:rgba(255,255,255,.35)}
+.tb:hover{color:rgba(255,255,255,.65)}.tb.active{background:rgba(255,255,255,.15);color:#fff}
+@media(max-width:750px){nav{padding:0 10px;flex-wrap:wrap;height:auto;min-height:54px;gap:4px}.nav-tab{padding:0 8px;font-size:9px;height:44px}.nav-brand{display:none}.toggles{margin-left:0;border-left:none;padding-left:0}}
+.section{display:none}.section.active{display:block}
+.dk{background:linear-gradient(165deg,var(--navy3),var(--navy) 40%,var(--navy2) 70%,#1a1845);padding:52px 24px 48px;position:relative;overflow:hidden}
+.dk::before{content:'';position:absolute;top:-50%;right:-20%;width:60%;height:200%;background:radial-gradient(ellipse,rgba(0,37,219,.12),transparent 70%);pointer-events:none}
+.dk-in{max-width:900px;margin:0 auto;position:relative;z-index:1}
+.ey{font-family:'Poppins',sans-serif;font-size:10px;letter-spacing:.28em;text-transform:uppercase;color:var(--silver);font-weight:600;margin-bottom:12px}
+h1{font-family:'Poppins',sans-serif;font-size:clamp(28px,5vw,44px);font-weight:700;line-height:1.1;color:#fff;margin-bottom:16px}
+h1 em{font-style:normal;color:var(--silver)}
+.lt{padding:48px 24px;background:var(--off)}.lt-in{max-width:900px;margin:0 auto}
+.sh{margin-bottom:28px}
+.sh .lb{font-family:'Poppins',sans-serif;font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:var(--blue);font-weight:600;margin-bottom:6px}
+.sh .lb.grn{color:var(--green)}
+.sh h2{font-family:'Poppins',sans-serif;font-size:clamp(22px,3.5vw,30px);font-weight:700;color:var(--navy);line-height:1.15;margin-bottom:6px}
+.sh p{font-size:13.5px;color:var(--mid);max-width:580px;line-height:1.65}
+.nb{max-width:900px;margin:0 auto 24px;border-left:3px solid var(--blue);background:#fff;padding:14px 18px;border-radius:0 3px 3px 0;font-size:12.5px;line-height:1.65;color:var(--black)}
+.nb strong{color:var(--blue)}.nb.grn{border-left-color:var(--green)}.nb.grn strong{color:var(--green)}.nb.amb{border-left-color:var(--amber)}.nb.amb strong{color:var(--amber)}
+.flow-container{max-width:900px;margin:0 auto 40px;display:flex;gap:0;align-items:stretch}
+@media(max-width:700px){.flow-container{flex-direction:column}}
+.flow-step{flex:1;background:#fff;border:1.5px solid var(--grey);padding:28px 22px;position:relative;display:flex;flex-direction:column}
+.flow-step:first-child{border-radius:8px 0 0 8px}.flow-step:last-child{border-radius:0 8px 8px 0}.flow-step:not(:last-child){border-right:none}
+.flow-step .step-num{font-family:'Poppins',sans-serif;font-size:36px;font-weight:800;color:rgba(0,37,219,.08);line-height:1;margin-bottom:8px}
+.flow-step .step-label{font-family:'Poppins',sans-serif;font-size:10px;letter-spacing:.18em;text-transform:uppercase;font-weight:600;margin-bottom:6px}
+.flow-step .step-label.blue{color:var(--blue)}.flow-step .step-label.green{color:var(--green)}.flow-step .step-label.silver{color:var(--silver)}
+.flow-step .step-title{font-family:'Poppins',sans-serif;font-size:16px;font-weight:700;color:var(--navy);margin-bottom:8px;line-height:1.25}
+.flow-step .step-desc{font-size:12.5px;color:var(--mid);line-height:1.6}
+.flow-arrow{position:absolute;right:-13px;top:50%;transform:translateY(-50%);width:24px;height:24px;background:var(--off);border:1.5px solid var(--grey);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:12px;color:var(--blue);z-index:2;font-weight:700}
+@media(max-width:700px){.flow-arrow{right:auto;bottom:-13px;top:auto;transform:translateX(-50%);left:50%}.flow-step{border-radius:0!important;border-right:1.5px solid var(--grey)!important;border-bottom:none}.flow-step:first-child{border-radius:8px 8px 0 0!important}.flow-step:last-child{border-radius:0 0 8px 8px!important;border-bottom:1.5px solid var(--grey)}}
+.cards{display:grid;gap:20px;max-width:900px;margin:0 auto}.cards.c3{grid-template-columns:repeat(3,1fr)}@media(max-width:800px){.cards.c3{grid-template-columns:1fr}}
+.cd{background:#fff;border:1.5px solid var(--grey);border-radius:6px;overflow:hidden;display:flex;flex-direction:column;transition:box-shadow .22s,transform .22s}
+.cd:hover{box-shadow:0 10px 32px rgba(0,37,219,.08);transform:translateY(-2px)}
+.cd.ft{border-color:var(--blue);border-width:2px}.cd.pm{border-color:var(--navy);border-width:2px}
+.ct{padding:22px 22px 18px;border-bottom:1px solid var(--grey);position:relative}
+.cd.ft .ct{background:linear-gradient(135deg,rgba(0,37,219,.03),rgba(232,236,255,.3))}
+.cd.pm .ct{background:linear-gradient(135deg,rgba(31,31,62,.03),rgba(136,144,181,.06))}
+.ch{display:inline-block;font-family:'Poppins',sans-serif;font-size:9px;letter-spacing:.18em;text-transform:uppercase;padding:3px 9px;border-radius:2px;font-weight:600;margin-bottom:8px}
+.ch.c1{background:var(--navy);color:#fff}.ch.c2{background:var(--blue-lt);color:var(--blue)}.ch.c3{background:var(--off);color:var(--mid)}
+.cn{font-family:'Poppins',sans-serif;font-size:18px;font-weight:700;color:var(--navy);line-height:1.2;margin-bottom:4px}
+.pr{display:flex;align-items:baseline;gap:5px;flex-wrap:wrap}
+.p{font-family:'Poppins',sans-serif;font-size:28px;font-weight:700;color:var(--navy);line-height:1}
+.pn{font-size:11px;color:var(--mid)}
+.p-iva{font-size:10px;color:var(--mid);font-weight:500;margin-top:3px;display:block}
+.bg{position:absolute;top:14px;right:14px;font-family:'Poppins',sans-serif;font-size:8px;letter-spacing:.14em;text-transform:uppercase;padding:3px 9px;border-radius:2px;font-weight:600}
+.bg.bb{background:var(--blue);color:#fff}.bg.bn{background:var(--navy);color:#fff}
+.cb{padding:18px 22px 22px;flex:1;display:flex;flex-direction:column}
+.bl{font-family:'Poppins',sans-serif;font-size:8px;letter-spacing:.2em;text-transform:uppercase;color:var(--mid);font-weight:600;margin-bottom:10px;margin-top:14px}.bl:first-child{margin-top:0}
+.it{display:flex;gap:9px;margin-bottom:8px;font-size:12.5px;line-height:1.55;color:var(--black)}
+.dt{width:5px;height:5px;border-radius:50%;background:var(--blue);flex-shrink:0;margin-top:7px}.dt.sv{background:var(--navy)}.dt.gr{background:var(--mid)}
+.scope-box{background:var(--blue-lt);border-radius:4px;padding:10px 14px;margin-top:auto}.scope-box.green{background:var(--green-lt)}.scope-box.grey{background:var(--off)}
+.scope-box .sb-label{font-family:'Poppins',sans-serif;font-size:8px;letter-spacing:.18em;text-transform:uppercase;font-weight:600;margin-bottom:6px}
+.scope-box .sb-label.blue{color:var(--blue)}.scope-box .sb-label.green{color:var(--green)}.scope-box .sb-label.grey{color:var(--mid)}
+.scope-box .tag{display:inline-block;background:#fff;border:1px solid rgba(0,0,0,.08);border-radius:2px;font-size:10px;padding:3px 7px;margin:2px 2px 0 0;color:var(--black)}
+.tx-table{max-width:900px;margin:24px auto 0;border:1px solid var(--grey);border-radius:4px;overflow:hidden;font-size:11px;background:#fff}
+.tx-table .tx-head{background:var(--off);padding:6px 12px;font-family:'Poppins',sans-serif;font-size:8px;letter-spacing:.15em;text-transform:uppercase;color:var(--mid);font-weight:600}
+.tx-table .tx-row{display:flex;justify-content:space-between;padding:6px 12px;border-top:1px solid var(--grey);color:var(--black)}
+.tx-table .tx-row span:last-child{font-weight:600;color:var(--navy);font-family:'Poppins',sans-serif}
+.ex-block{max-width:900px;margin:28px auto 0;background:rgba(255,255,255,.03);border:1px solid var(--glass-b);border-radius:8px;overflow:hidden}
+.ex-head{background:rgba(0,0,0,.15);padding:12px 20px}
+.ex-head span{font-family:'Poppins',sans-serif;font-size:10px;letter-spacing:.15em;text-transform:uppercase;color:var(--silver);font-weight:600}
+.ex-sub{display:block;font-weight:400;font-style:italic;letter-spacing:0;font-size:10px;color:rgba(255,255,255,.35);margin-top:2px;text-transform:none}
+.ex-grid{display:grid;grid-template-columns:1fr 1fr 1fr}@media(max-width:780px){.ex-grid{grid-template-columns:1fr}}
+.ex-grid-head{background:rgba(255,255,255,.03)}
+.ex-cell{padding:14px 18px;font-size:12px;line-height:1.55;color:rgba(255,255,255,.55);border-right:1px solid var(--glass-b);border-bottom:1px solid var(--glass-b)}.ex-cell:last-child{border-right:none}
+.ex-cell.eh{font-family:'Poppins',sans-serif;font-size:10px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:10px 18px}
+.ex-cell.e3{color:rgba(255,255,255,.4)}.ex-cell.e2{color:rgba(100,130,255,.8)}.ex-cell.e1{color:var(--silver)}
+.setup-card{max-width:620px;margin:0 auto;background:#fff;border:2px solid var(--blue);border-radius:8px;overflow:hidden}
+.setup-card .sc-top{padding:28px 28px 22px;border-bottom:1px solid var(--grey)}.setup-card .sc-body{padding:22px 28px 28px}
+.setup-price-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:16px}@media(max-width:500px){.setup-price-grid{grid-template-columns:1fr}}
+.sp-box{background:var(--off);border-radius:6px;padding:14px 16px;text-align:center}.sp-box.active{background:var(--blue-lt);border:1px solid rgba(0,37,219,.15)}
+.sp-box .sp-label{font-family:'Poppins',sans-serif;font-size:9px;letter-spacing:.15em;text-transform:uppercase;color:var(--mid);font-weight:600;margin-bottom:6px}.sp-box.active .sp-label{color:var(--blue)}
+.sp-box .sp-price{font-family:'Poppins',sans-serif;font-size:24px;font-weight:700;color:var(--navy)}.sp-box .sp-note{font-size:10px;color:var(--mid);margin-top:2px}
+.plan-phases{max-width:900px;margin:0 auto;display:grid;grid-template-columns:repeat(3,1fr);gap:0}@media(max-width:700px){.plan-phases{grid-template-columns:1fr}}
+.plan-phase{background:#fff;border:1.5px solid var(--grey);padding:32px 24px 180px;position:relative}
+.plan-phase:first-child{border-radius:8px 0 0 8px}.plan-phase:last-child{border-radius:0 8px 8px 0}.plan-phase:not(:last-child){border-right:none}
+@media(max-width:700px){.plan-phase{border-radius:0!important;border-right:1.5px solid var(--grey)!important;border-bottom:none}.plan-phase:first-child{border-radius:8px 8px 0 0!important}.plan-phase:last-child{border-radius:0 0 8px 8px!important;border-bottom:1.5px solid var(--grey)!important}}
+.pp-num{font-family:'Poppins',sans-serif;font-size:48px;font-weight:800;color:rgba(0,37,219,.06);line-height:1;margin-bottom:4px}
+.pp-period{font-family:'Poppins',sans-serif;font-size:10px;letter-spacing:.12em;text-transform:uppercase;font-weight:600;margin-bottom:8px}
+.pp-period.blue{color:var(--blue)}.pp-period.green{color:var(--green)}.pp-period.silver{color:var(--silver)}
+.pp-title{font-family:'Poppins',sans-serif;font-size:17px;font-weight:700;color:var(--navy);margin-bottom:8px;line-height:1.25}
+.pp-desc{font-size:12px;color:var(--mid);line-height:1.6}
+.pp-price-block{position:absolute;bottom:32px;left:24px;right:24px;border-top:1px solid var(--grey);padding-top:14px;min-height:115px}
+.pp-amount{font-family:'Poppins',sans-serif;font-size:26px;font-weight:700;color:var(--navy);line-height:1}.pp-amount.dim{color:var(--mid);font-size:20px}
+.pp-sub{font-size:11px;color:var(--mid);margin-top:3px;line-height:1.4}
+.pp-badge{display:inline-block;font-family:'Poppins',sans-serif;font-size:9px;letter-spacing:.1em;text-transform:uppercase;padding:3px 8px;border-radius:3px;font-weight:600;margin-top:6px;margin-right:4px}
+.pp-badge.disc{background:var(--green-lt);color:var(--green)}.pp-badge.inc{background:var(--blue-lt);color:var(--blue)}
+.pp-arrow{position:absolute;right:-13px;top:50%;transform:translateY(-50%);width:24px;height:24px;background:var(--off);border:1.5px solid var(--grey);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:12px;color:var(--blue);z-index:2;font-weight:700}
+@media(max-width:700px){.pp-arrow{right:auto;bottom:-13px;top:auto;transform:translateX(-50%);left:50%}}
+.total-bar{max-width:900px;margin:20px auto 0;background:var(--navy);border-radius:8px;padding:24px 28px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px}
+.total-bar .tbl{font-family:'Poppins',sans-serif;color:#fff}
+.total-bar .tbl-label{font-size:10px;letter-spacing:.15em;text-transform:uppercase;color:var(--silver);font-weight:600;margin-bottom:4px}
+.total-bar .tbl-amount{font-size:28px;font-weight:700}.total-bar .tbl-note{font-size:11px;color:rgba(255,255,255,.45);margin-top:2px}
+.total-bar .tbl-right{text-align:right}.total-bar .tbl-right .tbl-amount{font-size:18px;color:rgba(255,255,255,.5)}
+.tier-btns{max-width:900px;margin:0 auto 24px;display:flex;gap:10px;flex-wrap:wrap}
+.tier-btn{height:40px;background:#fff;color:var(--black);border:1.5px solid var(--grey);border-radius:4px;padding:0 18px;font-family:'Poppins',sans-serif;font-size:12px;font-weight:500;cursor:pointer;transition:all .2s;letter-spacing:.03em}
+.tier-btn:hover{border-color:var(--blue);color:var(--blue)}.tier-btn.active{background:var(--navy);color:#fff;border-color:var(--navy)}
+footer{max-width:900px;margin:36px auto 0;border-top:1px solid var(--grey);padding:18px 0 40px;font-size:11px;color:var(--mid);letter-spacing:.04em}
+</style>
+</head>
+<body>
+<nav>
+  <img class="nav-logo" src="data:image/png;base64,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" alt="B Management">
+  <div class="nav-right">
+    <div class="nav-tabs">
+      <button class="nav-tab active" onclick="showSection('intro',this)">Resumen</button>
+      <button class="nav-tab" onclick="showSection('accounting',this)">Servicio Contable</button>
+      <button class="nav-tab" onclick="showSection('setup',this)">Paquete de Setup</button>
+      <button class="nav-tab" onclick="showSection('plan',this)">Tu Plan</button>
+    </div>
+    <div class="toggles">
+      <div class="tg">
+        <button class="tb" id="btn-usd" onclick="setCur('usd')">USD</button>
+        <button class="tb active" id="btn-cop" onclick="setCur('cop')">COP</button>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<div class="section active" id="sec-intro">
+  <div class="dk"><div class="dk-in">
+    <div class="ey">Propuesta preparada para Kurios Colombia · 2026</div>
+    <h1>De Inactiva<br>a <em>Operativa</em></h1>
+    <p style="font-size:14px;color:rgba(255,255,255,.55);max-width:600px;line-height:1.7">Acompañamos a Kurios Colombia desde el primer día, asegurando una transición ordenada desde su estado de inactividad hasta el inicio de una operación contable activa.<br><br>Este servicio integral, estructurado en dos fases, garantiza continuidad y cumplimiento en cada etapa.</p>
+  </div></div>
+  <div class="lt"><div class="lt-in">
+    <div class="sh">
+      <div class="lb">Cómo Funciona</div>
+      <h2>Dos Componentes, Un Flujo</h2>
+      <p>El servicio sigue una secuencia clara: un <strong>setup inicial</strong> para construir la base, seguido de un <strong>servicio mensual recurrente</strong> una vez inicien las operaciones.</p>
+    </div>
+    <div class="flow-container">
+      <div class="flow-step">
+        <div class="step-num">01</div><div class="step-label blue">Único · 2026</div>
+        <div class="step-title">Setup &amp; Cobertura Dormancia</div>
+        <div class="step-desc">El servicio abarca la configuración inicial del área contable, incluyendo la definición de políticas, sistemas y procesos, así como el mantenimiento operativo durante la etapa de inactividad.<br><br>Su objetivo es establecer una estructura financiera sólida, profesional y en pleno cumplimiento desde el primer momento.<br><br>Este servicio se factura una única vez al inicio.</div>
+        <div class="flow-arrow">→</div>
+      </div>
+      <div class="flow-step">
+        <div class="step-num">02</div><div class="step-label green">Transición · 2026</div>
+        <div class="step-title">Primeras Operaciones</div>
+        <div class="step-desc">Si la compañía comienza a operar en 2026, el servicio contable recurrente se activa con una tarifa preferencial: <strong>40% de la tarifa estándar del tier seleccionado para 2027.</strong><br><br>Pagas únicamente cuando comienzas a operar.</div>
+        <div class="flow-arrow">→</div>
+      </div>
+      <div class="flow-step">
+        <div class="step-num">03</div><div class="step-label silver">Recurrente · 2027+</div>
+        <div class="step-title">Servicio Contable Completo</div>
+        <div class="step-desc">A partir de enero de 2027, el servicio mensual se presta a tarifa completa.<br>El alcance y la tarifa se revisan anualmente, y el <strong>tier seleccionado</strong> define el nivel de servicio recurrente.</div>
+      </div>
+    </div>
+    <div class="nb grn"><strong>Un flujo:</strong> El setup prepara la base para cualquier tier. El tier que elijas define la profundidad de tu servicio mensual recurrente.</div>
+    <div class="nb amb"><strong>Protección de dormancia:</strong> Mientras la compañía esté inactiva (2026), todas las obligaciones fiscales, regulatorias y de cumplimiento se gestionan como parte del setup — sin costos mensuales adicionales.</div>
+  </div></div>
+</div>
+
+<div class="section" id="sec-accounting">
+  <div style="background:linear-gradient(165deg,var(--navy3),var(--navy) 35%,var(--navy2) 65%,#1a1845);padding:52px 24px 48px;position:relative;overflow:hidden">
+    <div style="position:absolute;top:-50%;right:-20%;width:60%;height:200%;background:radial-gradient(ellipse,rgba(0,37,219,.12),transparent 70%);pointer-events:none"></div>
+    <div style="max-width:900px;margin:0 auto;position:relative;z-index:1">
+      <div class="ey">Servicio Mensual Recurrente — Tarifas 2027</div>
+      <h1>Tiers de Servicio<br><em>Contable Recurrente</em></h1>
+      <p style="font-size:14px;color:rgba(255,255,255,.55);max-width:600px;line-height:1.7;margin-bottom:40px">Tres niveles de servicio.<br><strong>Misma calidad, diferente nivel de acompañamiento.</strong><br>Elige según cuánto quieras delegar.</p>
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-bottom:36px" id="scope-grid">
+        <div style="background:var(--glass);border:1px solid var(--glass-b);border-radius:8px;padding:26px 22px;display:flex;flex-direction:column">
+          <div style="font-family:'Poppins',sans-serif;font-size:10px;letter-spacing:.2em;text-transform:uppercase;font-weight:700;color:rgba(255,255,255,.4);margin-bottom:6px">Tier 3</div>
+          <div style="font-family:'Poppins',sans-serif;font-size:17px;font-weight:700;color:#fff;margin-bottom:4px">Registrar &amp; Cumplir</div>
+          <div style="font-size:13px;font-style:italic;color:rgba(255,255,255,.45);margin-bottom:16px">&ldquo;Tú operas. Nosotros registramos.&rdquo;</div>
+          <div style="font-size:12.5px;color:rgba(255,255,255,.5);line-height:1.6">Tú gestionas la operación diaria: facturación, pagos y decisiones.<br>Nosotros procesamos tu información con precisión, <strong>cumpliendo estándares contables y fiscales</strong>, y aseguramos el cumplimiento oportuno de todas las obligaciones.</div>
+          <div style="margin-top:auto;padding-top:14px;border-top:1px solid rgba(255,255,255,.08);font-size:11px;color:rgba(255,255,255,.4);line-height:1.5"><strong style="color:rgba(255,255,255,.75)">Tú:</strong> Ejecutas, envías documentación y gestionas la operación.<br><strong style="color:rgba(255,255,255,.75)">Nosotros:</strong> Procesamos, registramos, declaramos y reportamos.</div>
+        </div>
+        <div style="background:rgba(0,37,219,.08);border:1px solid rgba(0,37,219,.25);border-radius:8px;padding:26px 22px;display:flex;flex-direction:column">
+          <div style="font-family:'Poppins',sans-serif;font-size:10px;letter-spacing:.2em;text-transform:uppercase;font-weight:700;color:rgba(100,130,255,.9);margin-bottom:6px">Tier 2</div>
+          <div style="font-family:'Poppins',sans-serif;font-size:17px;font-weight:700;color:#fff;margin-bottom:4px">Ejecutar por Instrucción</div>
+          <div style="font-size:13px;font-style:italic;color:rgba(255,255,255,.45);margin-bottom:16px">&ldquo;Tú decides. Nosotros ejecutamos.&rdquo;</div>
+          <div style="font-size:12.5px;color:rgba(255,255,255,.5);line-height:1.6">Tú defines las decisiones clave.<br>Nosotros ejecutamos las transacciones, validamos la información y te alertamos sobre inconsistencias o riesgos, mediante reportes que incluyen análisis.</div>
+          <div style="margin-top:auto;padding-top:14px;border-top:1px solid rgba(255,255,255,.08);font-size:11px;color:rgba(255,255,255,.4);line-height:1.5"><strong style="color:rgba(255,255,255,.75)">Tú:</strong> Tomas decisiones y apruebas.<br><strong style="color:rgba(255,255,255,.75)">Nosotros:</strong> Ejecutamos, validamos, conciliamos, analizamos y reportamos.</div>
+        </div>
+        <div style="background:rgba(136,144,181,.06);border:1px solid rgba(136,144,181,.25);border-radius:8px;padding:26px 22px;display:flex;flex-direction:column">
+          <div style="font-family:'Poppins',sans-serif;font-size:10px;letter-spacing:.2em;text-transform:uppercase;font-weight:700;color:var(--silver);margin-bottom:6px">Tier 1</div>
+          <div style="font-family:'Poppins',sans-serif;font-size:17px;font-weight:700;color:#fff;margin-bottom:4px">Contabilidad Autónoma</div>
+          <div style="font-size:13px;font-style:italic;color:rgba(255,255,255,.45);margin-bottom:16px">&ldquo;Nosotros lo manejamos. Tú apruebas.&rdquo;</div>
+          <div style="font-size:12.5px;color:rgba(255,255,255,.5);line-height:1.6">Asumimos la gestión integral del ciclo contable.<br>Coordinamos con tus equipos, implementamos controles y gestionamos el calendario financiero, impulsando una operación ordenada, eficiente y escalable.</div>
+          <div style="margin-top:auto;padding-top:14px;border-top:1px solid rgba(255,255,255,.08);font-size:11px;color:rgba(255,255,255,.4);line-height:1.5"><strong style="color:rgba(255,255,255,.75)">Tú:</strong> Apruebas y creces.<br><strong style="color:rgba(255,255,255,.75)">Nosotros:</strong> Gestionamos, ejecutamos, controlamos, reportamos y optimizamos.</div>
+        </div>
+      </div>
+      <div class="ex-block">
+        <div class="ex-head"><span>En la Práctica — Pago a Proveedores<span class="ex-sub">(Ejemplo ilustrativo de uno de los procesos)</span></span></div>
+        <div class="ex-grid ex-grid-head"><div class="ex-cell eh e3">Tier 3</div><div class="ex-cell eh e2">Tier 2</div><div class="ex-cell eh e1">Tier 1</div></div>
+        <div class="ex-grid">
+          <div class="ex-cell">Tú apruebas y revisas la factura, realizas el pago, nos envías el soporte y nosotros lo registramos.</div>
+          <div class="ex-cell">Tú apruebas la factura. Nosotros la validamos contra el soporte, <strong>gestionamos el pago</strong>, lo registramos y te alertamos sobre vencimientos.</div>
+          <div class="ex-cell">Gestionamos el proceso completo: calendario de pagos, validaciones, alertas y ejecución. Te presentamos un lote para aprobación y, una vez aprobado, ejecutamos.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="lt"><div class="lt-in">
+    <div class="sh"><div class="lb">Servicio Mensual — Tarifas 2027</div><h2>Qué Incluye Cada Tier</h2></div>
+    <div class="cards c3">
+      <div class="cd"><div class="ct"><div class="ch c3">Tier 3</div><div class="cn">Standard</div><div class="pr"><span class="p tier-price" data-tier="t3">$700</span><span class="pn">/ mes</span></div><span class="p-iva">+ IVA</span></div>
+        <div class="cb"><div class="bl">Actividades Clave</div>
+          <div class="it"><span class="dt gr"></span><span><strong>Registro</strong> de documentos fuente (facturas, recibos, nómina)</span></div>
+          <div class="it"><span class="dt gr"></span><span>Estados financieros mensuales (P&amp;G, Balance, Flujo de caja)</span></div>
+          <div class="it"><span class="dt gr"></span><span>Conciliaciones bancarias y mantenimiento del libro mayor</span></div>
+          <div class="it"><span class="dt gr"></span><span>Cumplimiento tributario completo (IVA, retenciones, renta, ICA, exógena)</span></div>
+          <div class="it"><span class="dt gr"></span><span>Nómina y cumplimiento DIAN</span></div>
+          <div class="it"><span class="dt gr"></span><span>Reportes estándar</span></div>
+          <div class="scope-box grey" style="margin-top:16px"><div class="sb-label grey">Entregables Mensuales</div><span class="tag">Estados Financieros</span><span class="tag">Declaraciones</span><span class="tag">Conciliaciones</span><span class="tag">Nómina</span><span class="tag">Dashboard Estándar</span></div>
+      </div></div>
+      <div class="cd ft"><div class="bg bb">Recomendado</div><div class="ct"><div class="ch c2">Tier 2</div><div class="cn">Delegado</div><div class="pr"><span class="p tier-price" data-tier="t2">$1,230</span><span class="pn">/ mes</span></div><span class="p-iva">+ IVA</span></div>
+        <div class="cb"><div class="bl">Todo lo del Tier 3, más</div>
+          <div class="it"><span class="dt"></span><span><strong>Ejecución</strong> transaccional (facturación, pagos, nómina)</span></div>
+          <div class="it"><span class="dt"></span><span>Validación contra contratos y documentos soporte aplicables</span></div>
+          <div class="it"><span class="dt"></span><span>Conciliaciones con alertas de vencimientos e inconsistencias</span></div>
+          <div class="it"><span class="dt"></span><span>Provisiones, causaciones y otros ajustes de cierre</span></div>
+          <div class="it"><span class="dt"></span><span>Reportes con análisis de variaciones</span></div>
+          <div class="it"><span class="dt"></span><span>Monitoreo y alertas sobre principales líneas de los estados financieros</span></div>
+          <div class="it"><span class="dt"></span><span>Soporte de auditoría (cédulas, papeles de trabajo y coordinación)</span></div>
+          <div class="scope-box" style="margin-top:16px"><div class="sb-label blue">Entregables Mensuales <span style="opacity:.55;font-weight:500">· incluye todo lo del Tier 3</span></div><span class="tag">Estados Financieros</span><span class="tag">Declaraciones</span><span class="tag">Nómina</span><span class="tag">Conciliaciones Detalladas</span><span class="tag">Análisis de Variaciones</span><span class="tag">Paquete de Cierre</span><span class="tag">Dashboard Custom</span></div>
+      </div></div>
+      <div class="cd pm"><div class="ct"><div class="ch c1">Tier 1</div><div class="cn">Autónomo</div><div class="pr"><span class="p tier-price" data-tier="t1">$1,920</span><span class="pn">/ mes</span></div><span class="p-iva">+ IVA</span></div>
+        <div class="cb"><div class="bl">Todo lo del Tier 2, más</div>
+          <div class="it"><span class="dt sv"></span><span><strong>Gestión proactiva</strong> del ciclo financiero (hitos, vencimientos, triggers)</span></div>
+          <div class="it"><span class="dt sv"></span><span>Coordinación con equipos internos (operaciones, RRHH, proyectos) desde la perspectiva contable y financiera</span></div>
+          <div class="it"><span class="dt sv"></span><span>Monitoreo continuo y reporte de alertas sobre los estados financieros</span></div>
+          <div class="it"><span class="dt sv"></span><span>Diseño e implementación de controles internos</span></div>
+          <div class="it"><span class="dt sv"></span><span>Documentación de procesos y mejora continua</span></div>
+          <div class="it"><span class="dt sv"></span><span>Gestión integral del proceso de auditoría (end-to-end)</span></div>
+          <div class="it"><span class="dt sv"></span><span>Administración de operaciones intercompañía</span></div>
+          <div class="it"><span class="dt sv"></span><span>Soporte y preparación para juntas o comités directivos</span></div>
+          <div class="scope-box green" style="margin-top:16px"><div class="sb-label green">Entregables Mensuales <span style="opacity:.55;font-weight:500">· incluye todo lo del Tier 2</span></div><span class="tag">Estados Financieros</span><span class="tag">Declaraciones</span><span class="tag">Nómina</span><span class="tag">Reporte de Controles</span><span class="tag">Análisis de Variaciones</span><span class="tag">Documentación de Procesos</span><span class="tag">Dashboard Avanzado</span><span class="tag">Revisión Trimestral</span></div>
+      </div></div>
+    </div>
+    <div class="tx-table"><div class="tx-head">Supuestos de Precio (todos los tiers)</div><div class="tx-row"><span>Transacciones mensuales</span><span>≤ 100</span></div><div class="tx-row"><span>Empleados activos</span><span>≤ 10</span></div><div class="tx-row"><span>Cuentas bancarias</span><span>≤ 2</span></div></div>
+    <div class="nb" style="margin-top:16px"><strong>Precio basado en volumen:</strong> Si tu volumen real está consistentemente por debajo de los umbrales, la tarifa puede revisarse a la baja. Si los excede, se aplica un ajuste.</div>
+    <div class="nb" style="margin-top:12px;border-left-color:var(--navy)"><strong style="color:var(--navy)">Licencias de software:</strong> Las licencias de software contable o ERP <strong>no están incluidas</strong> en la tarifa. B Management pone a disposición una licencia corporativa básica (gestionada y provista por la firma), suficiente para operaciones de Tier 3. Para <strong>Tier 2 y Tier 1</strong>, y en general para operaciones de mayor volumen o complejidad, se recomienda que la compañía adquiera una licencia propia.</div>
+    <div class="nb fx-note" style="margin-top:12px;display:none;border-left-color:var(--silver)"><strong style="color:var(--silver)">Nota sobre USD:</strong> Los valores en dólares son referenciales y se calculan a una tasa de cambio estimada. La tasa aplicable puede ser revisada al momento de la facturación para reflejar condiciones de mercado.</div>
+  </div></div>
+</div>
+
+<div class="section" id="sec-setup">
+  <div class="dk" style="padding-bottom:32px"><div class="dk-in">
+    <div class="ey">Servicio Único</div>
+    <h1>Paquete de Setup<br>&amp; <em>Dormancia</em></h1>
+    <p style="font-size:14px;color:rgba(255,255,255,.55);max-width:600px;line-height:1.7"><strong>Servicio único.</strong><br>Se factura una sola vez al inicio e incluye la configuración contable y estructural, así como el cumplimiento regulatorio durante la etapa de dormancia.</p>
+  </div></div>
+  <div class="lt"><div class="lt-in">
+    <div class="setup-card">
+      <div class="sc-top">
+        <div class="ch c2">Paquete de Setup &amp; Dormancia</div>
+        <div class="cn">Base Completa</div>
+        <div style="font-size:13px;color:var(--mid);line-height:1.6;margin-top:8px">Todo lo necesario para llevar tu entidad de inactiva a operativa; incluyendo cumplimiento tributario, políticas contables, configuración de sistemas y estructuración financiera.</div>
+        <div class="setup-price-grid">
+          <div class="sp-box"><div class="sp-label">Con Tier 3</div><div class="sp-price sp-standalone-price">$1,300</div><div class="sp-note">+ IVA · único</div></div>
+          <div class="sp-box active"><div class="sp-label">Con Tier 2 o Tier 1</div><div class="sp-price sp-bundled-price">$900</div><div class="sp-note">+ IVA · único</div><div class="sp-savings" style="margin-top:6px;font-family:'Poppins',sans-serif;font-size:9px;letter-spacing:.1em;text-transform:uppercase;padding:3px 8px;border-radius:3px;font-weight:600;background:var(--green-lt);color:var(--green);display:inline-block">Ahorras $400</div></div>
+        </div>
+      </div>
+      <div class="sc-body"><div class="bl">Qué Incluye</div>
+        <div class="it"><span class="dt"></span><span>Regularización tributaria desde la constitución, incluyendo la presentación de obligaciones pendientes</span></div>
+        <div class="it"><span class="dt"></span><span>Declaraciones tributarias en cero durante el período de dormancia (resto de 2026)</span></div>
+        <div class="it"><span class="dt"></span><span>Políticas contables a medida, alineadas con NIIF y normativa tributaria colombiana, o adopción local de políticas contables del grupo</span></div>
+        <div class="it"><span class="dt"></span><span>Diseño del plan de cuentas y parametrización del sistema contable</span></div>
+        <div class="it"><span class="dt"></span><span>Habilitación de facturación electrónica, documento soporte y demás obligaciones aplicables ante la DIAN</span></div>
+        <div class="it"><span class="dt"></span><span>Protocolo intercompañía: definición de flujos, documentación soporte y criterios de registro</span></div>
+        <div class="it"><span class="dt"></span><span>Revisión de estrategia de capitalización y repatriación</span></div>
+        <div class="scope-box" style="margin-top:20px"><div class="sb-label blue">Entregables del Setup</div><span class="tag">Regularización Tributaria</span><span class="tag">Declaraciones Dormancia</span><span class="tag">Políticas contables</span><span class="tag">Plan de Cuentas</span><span class="tag">Configuración del sistema</span><span class="tag">Habilitación DIAN</span><span class="tag">Protocolo intercompañía</span><span class="tag">Memo de estrategia de capital</span></div>
+      </div>
+    </div>
+    <div class="nb" style="margin-top:24px"><strong>Nota:</strong> B Management identifica y estructura los elementos base de los acuerdos intercompañía requeridos (por ejemplo, licencias de software, servicios de marketing, entre otros).<br>La redacción legal de dichos acuerdos no está incluida y debe ser gestionada por asesores legales.</div>
+    <div class="nb fx-note" style="margin-top:12px;display:none;border-left-color:var(--silver)"><strong style="color:var(--silver)">Nota sobre USD:</strong> Los valores en dólares son referenciales y se calculan a una tasa de cambio estimada. La tasa aplicable puede ser revisada al momento de la facturación para reflejar condiciones de mercado.</div>
+  </div></div>
+</div>
+
+<div class="section" id="sec-plan">
+  <div class="dk" style="padding-bottom:32px"><div class="dk-in">
+    <div class="ey">Resumen de Inversión — Kurios Colombia · 2026 &amp; 2027</div>
+    <h1>El Plan para<br><em>Kurios Colombia</em></h1>
+    <p style="font-size:14px;color:rgba(255,255,255,.55);max-width:600px;line-height:1.7">Selecciona el tier para visualizar la inversión total desde la firma del contrato hasta 2027.</p>
+  </div></div>
+  <div class="lt"><div class="lt-in">
+    <div class="tier-btns">
+      <button class="tier-btn" onclick="selectTier('t3',this)">Tier 3 — Registrar</button>
+      <button class="tier-btn active" onclick="selectTier('t2',this)">Tier 2 — Ejecutar</button>
+      <button class="tier-btn" onclick="selectTier('t1',this)">Tier 1 — Manejar</button>
+    </div>
+    <div class="plan-phases">
+      <div class="plan-phase">
+        <div class="pp-num">01</div><div class="pp-period blue">Firma del Contrato · 2026</div>
+        <div class="pp-title">Setup &amp; Dormancia</div>
+        <div class="pp-desc">Regularización tributaria, políticas contables a medida, configuración de sistemas, habilitación ante la DIAN, protocolo intercompañía y definición de la estrategia de capitalización.<br>La compañía permanece inactiva, pero en pleno cumplimiento.</div>
+        <div class="pp-price-block">
+          <div class="pp-amount" id="pp-setup">$900</div>
+          <div class="pp-sub">+ IVA · único</div>
+          <div class="pp-badge inc">Dormancia incluida</div>
+          <div class="pp-badge disc" id="pp-setup-note">Descuento Tier 2/1</div>
+        </div>
+        <div class="pp-arrow">→</div>
+      </div>
+      <div class="plan-phase">
+        <div class="pp-num">02</div><div class="pp-period green">Primeras Transacciones → Dic 2026</div>
+        <div class="pp-title">Primeras Operaciones</div>
+        <div class="pp-desc">El servicio contable mensual se activa al <strong>40% de la tarifa 2027.</strong><br>Se inicia la operación contable, junto con reportes y dashboards.<br>Solo pagas cuando comienzas a operar.</div>
+        <div class="pp-price-block">
+          <div class="pp-amount" id="pp-mo26">$492 / mes</div>
+          <div class="pp-sub" id="pp-mo26-sub">+ IVA · $1,968 <span style="color:var(--mid)">(est. 4 meses)</span></div>
+          <div class="pp-badge disc">60% descuento</div>
+        </div>
+        <div class="pp-arrow">→</div>
+      </div>
+      <div class="plan-phase">
+        <div class="pp-num">03</div><div class="pp-period silver">Ene 2027 en Adelante</div>
+        <div class="pp-title">Operaciones Plenas</div>
+        <div class="pp-desc">El servicio se presta a tarifa completa, alineado con el volumen y las necesidades del negocio.<br>El alcance y la tarifa se revisan periódicamente.</div>
+        <div class="pp-price-block">
+          <div class="pp-amount dim" id="pp-full">$1,230 / mes</div>
+          <div class="pp-sub" id="pp-full-sub">+ IVA · $14,760 / año</div>
+        </div>
+      </div>
+    </div>
+    <div class="total-bar">
+      <div class="tbl"><div class="tbl-label">Total Estimado 2026</div><div class="tbl-amount" id="tb-total26">$2,868</div><div class="tbl-note">+ IVA · Setup + est. 4 meses con 60% descuento</div></div>
+      <div class="tbl tbl-right"><div class="tbl-label">Proyección Anual 2027</div><div class="tbl-amount" id="tb-annual">$14,760</div><div class="tbl-note">+ IVA · 12 × tarifa mensual completa</div></div>
+    </div>
+    <div class="nb fx-note" style="margin-top:20px;display:none;border-left-color:var(--silver)"><strong style="color:var(--silver)">Nota sobre USD:</strong> Los valores en dólares son referenciales y se calculan a una tasa de cambio estimada. La tasa aplicable puede ser revisada al momento de la facturación para reflejar condiciones de mercado.</div>
+    <div class="nb amb" style="margin-top:12px"><strong>Vigencia de la oferta:</strong> Los términos y tarifas presentados en esta propuesta son válidos por <strong>30 días calendario</strong> a partir del 21 de abril de 2026. Propuesta vigente hasta el <strong>21 de mayo de 2026</strong>.</div>
+    <footer>B Management SAS · Delegar para crecer · Precios + IVA · Sujeto a confirmación de alcance · Propuesta preparada para Kurios Colombia · Vigencia: 21 de mayo de 2026</footer>
+  </div></div>
+</div>
+
+<script>
+let cur='cop',cTier='t2';
+const T={t3:{usd:700,cop:2500000},t2:{usd:1230,cop:4400000},t1:{usd:1920,cop:6900000}};
+const S={usd:1300,cop:4680000,ub:900,cb:3240000};
+function fm(n){return cur==='cop'?'$'+n.toLocaleString('es-CO'):'$'+n.toLocaleString('en-US')}
+function gp(t){return cur==='cop'?T[t].cop:T[t].usd}
+function gs(b){return b?(cur==='cop'?S.cb:S.ub):(cur==='cop'?S.cop:S.usd)}
+function setCur(c){cur=c;document.getElementById('btn-usd').classList.toggle('active',c==='usd');document.getElementById('btn-cop').classList.toggle('active',c==='cop');rp()}
+function rp(){
+  var f=gp(cTier),m=Math.round(f*.4),m4=m*4,sp=cTier==='t3'?gs(0):gs(1),t26=sp+m4,an=f*12;
+  var sav=gs(0)-gs(1);
+  document.querySelectorAll('.sp-standalone-price').forEach(function(e){e.textContent=fm(gs(0))});
+  document.querySelectorAll('.sp-bundled-price').forEach(function(e){e.textContent=fm(gs(1))});
+  document.querySelectorAll('.sp-savings').forEach(function(e){e.textContent='Ahorras '+fm(sav)});
+  document.querySelectorAll('.tier-price').forEach(function(e){e.textContent=fm(gp(e.dataset.tier))});
+  document.querySelectorAll('.fx-note').forEach(function(e){e.style.display=cur==='usd'?'block':'none'});
+  var el=function(id){return document.getElementById(id)};
+  if(el('pp-setup'))el('pp-setup').textContent=fm(sp);
+  if(el('pp-setup-note'))el('pp-setup-note').style.display=cTier==='t3'?'none':'inline-block';
+  if(el('pp-mo26'))el('pp-mo26').textContent=fm(m)+' / mes';
+  if(el('pp-mo26-sub'))el('pp-mo26-sub').innerHTML='+ IVA \u00b7 '+fm(m4)+' <span style="color:var(--mid)">(est. 4 meses)</span>';
+  if(el('pp-full'))el('pp-full').textContent=fm(f)+' / mes';
+  if(el('pp-full-sub'))el('pp-full-sub').textContent='+ IVA \u00b7 '+fm(an)+' / a\u00f1o';
+  if(el('tb-total26'))el('tb-total26').textContent=fm(t26);
+  if(el('tb-annual'))el('tb-annual').textContent=fm(an);
+}
+function selectTier(t,b){cTier=t;document.querySelectorAll('.tier-btn').forEach(function(x){x.classList.remove('active')});b.classList.add('active');rp()}
+function showSection(id,b){document.querySelectorAll('.section').forEach(function(s){s.classList.remove('active')});document.querySelectorAll('.nav-tab').forEach(function(t){t.classList.remove('active')});document.getElementById('sec-'+id).classList.add('active');b.classList.add('active')}
+(function(){var g=document.getElementById('scope-grid');function h(){if(g)g.style.gridTemplateColumns=window.innerWidth<=780?'1fr':'repeat(3,1fr)'}window.addEventListener('resize',h);h();rp()})();
+</script>
+</body>
+</html>
